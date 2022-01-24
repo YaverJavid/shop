@@ -1,0 +1,170 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+/* Universal */
+
+body {
+  font-size: 2.4vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.section {
+  width: 100%;
+
+}
+
+/* Top */
+
+.top {
+  height: 10vh;
+  background: black;
+  z-index: 2;
+
+}
+
+.hamburger {
+  width: 5vh;
+  height: 5vh;
+
+}
+
+.top-contents>h2 {
+  display: inline;
+  color: white;
+  position: relative;
+  top: -1.2vh;
+  font-family: 'Heebo', sans-serif;
+  left: 10vh;
+  user-select: none;
+
+}
+
+.top-contents>svg {
+  padding-top: 2.3vh;
+  margin-left: 3vh;
+}
+
+.top-contents>a {
+  display: none
+}
+
+/* Menu */
+
+.menu {
+  height: 90vh;
+  position: absolute;
+  background: black;
+  display: none;
+  text-align: center;
+  border-top: 0.3vh solid white;
+  z-index: 2;
+
+}
+
+.menu>nav>a {
+  color: white;
+  font-size: 4vh;
+  position: relative;
+  top: 30vh;
+  padding: 2vh 10vh 2vh;
+  display: inline-block
+}
+
+.dBlock {
+  display: block
+}
+
+/* Catalog */
+.catalog>div>a {
+  color: black;
+  text-decoration: none;
+  display: inline;
+}
+
+.items {
+  width: 40%;
+  text-align: center;
+  padding-top: 2.3vh;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.catalog-row {
+  height: 30vh;
+  overflow: hidden
+}
+
+.item-right {
+  position: relative;
+  left: 27vh;
+  top: -29.5vh;
+}
+
+.item-left {
+  margin: 5vh;
+  position: relative;
+  left: 3vh;
+}
+
+
+.price {
+  font-size: 2vh;
+  font-family: monospace;
+}
+
+.item-image {
+  width: 15vh;
+}
+
+/*****
+       Responsivness
+******/
+@media only screen and (min-width: 768px) {
+  .top-contents>h2 {
+    left: 0
+  }
+
+  .top-contents>svg {
+    width: 0;
+  }
+
+  .top-contents>a {
+    color: white;
+    display: inline;
+    position: relative;
+    left: 5vh;
+    top: -1.5vh;
+    margin-left: 2vh;
+    text-decoration: none;
+  }
+
+  .top {
+    position: fixed
+  }
+
+  .catalog {
+    padding-top: 10vh;
+  }
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 3vh
+}
+
+.footer>u>a {
+  color: white !important;
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+
+}
+
+.m1 {
+  margin-left: 1vh
+}
